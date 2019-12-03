@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+  
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,10 +8,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Cartner</title>
+    
   </head>
+  
   <body>
+   
+
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Cartner</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +26,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Your Profile</a>
+              <a class="nav-link" href="profile.html">Your Profile</a>
             </li>
             <li>
                 <form class="form-inline">
@@ -44,25 +50,130 @@
 
      <div class="main-containter">
       <div class="jumbotron">
+        <div class = "container justify-content-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvqX5YU5zuBJ9NvQIsqMa8UU7GNNLcMjKnXNmm34lH1aakYr6s" alt="golf clubs">
             <h1 class="display-4">Cartner</h1>
             <p class="lead">Cartner is a social media to find golfers near you!</p>
             <hr class="my-4">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Sign Up
+            </button>
+            <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sign up</h4>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+          </div>
+            
+        </div>
         </div>
       </div>
       <div class="container">
-          <div class="row">
-            <div class = "col">
-              Nearby
-            </div>
-            <div class = "col">
-              Popular
-            </div>
+        <div class = "row">
+          <div class = "col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                          <img src="https://riverwalkgc.com/golf/emailer2020/img/riverwalkgc/Presidio_%235_updated(1).jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <a href="index.html">Courses Nearby</a>
+                          <p class="card-text">Here are the courses near you.</p>
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Granite links</li>
+                              <li class="list-group-item">Braintree Municipal Golf Course</li>
+                              <li class="list-group-item">Tekoa Country Club</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+          </div>
+          <div class = "col">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5c2f89bdb40b9d9fa6645c46/1546878356173-NWGX82RKIGD901R6BKET/ke17ZwdGBToddI8pDm48kCX-V5vw-8h9IBXN10-_8XN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p4Wyba38KfG317vYluk45_zZdtnDCZTLKcP2mivxmYi50xvY5saIGKMgOza9mH4XA/Aldeen+Aerial+Photgraphy-2+6-14+Jeff+Anderson.jpg?format=2500w" class="card-img" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <a href="popularCourses.html">Popular Courses</a>
+                              <p class="card-text">Here are the most popular courses.</p>
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">Pebble Peach</li>
+                                  <li class="list-group-item">Granite Links</li>
+                                  <li class="list-group-item">Tekoa Country Club</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          </div>
+      </div>
+
             
+          <div class = "d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Feed</h5>
+                    <p class="card-text">See who is being connected</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Tim connected with John</li>
+                    <li class="list-group-item">Blake connected with Jason</li>
+                    <li class="list-group-item">Liam connected with Nick</li>
+                  </ul>
+                  
+                </div>
+          </div>
+      </div>
+      <div>
+        <div class="jumbotron">
+          <div class="container justify-content-center">
+            <p>@Copyright Cartner</p>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">Sign up for updates</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
 
           </div>
-
-
+        </div>
       </div>
-  </body>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+    </body>
 </html>
